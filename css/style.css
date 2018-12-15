@@ -1,0 +1,51 @@
+@keyframes row1 {
+   0% {
+      background-position: 0 0;
+   }
+
+   100% {
+      background-position: -7500px 0;
+   }
+}
+
+@keyframes row2 {
+   0% {
+      background-position: 0 -250px;
+   }
+
+   100% {
+      background-position: -7500px -250px;
+   }
+}
+
+@keyframes row3 {
+   0% {
+      background-position: 0 -500px;
+   }
+
+   100% {
+      background-position: -7500px -500px;
+   }
+}
+
+@keyframes row4 {
+   0% {
+      background-position: 0 -750px;
+   }
+
+   100% {
+      background-position: -7500px -750px;
+   }
+}
+
+
+#animation {
+   animation: row1 1s steps(30) 0s none,
+      row2 1s steps(30) 1s none,
+      row3 1s steps(30) 2s none,
+      row4 1s steps(30) 3s none;
+
+   width: 250px;
+   height: 250px;
+   background-image: url('../img/sprite.png');
+}
